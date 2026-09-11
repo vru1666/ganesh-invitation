@@ -154,11 +154,11 @@
     window.open(CONFIG.mapsUrl, '_blank', 'noopener');
   }
 
-  function shareOnWhatsApp() {
-  var text = window.location.href;
+function shareOnWhatsApp() {
+  var text = CONFIG.shareMessage + '\n' +
+             'https://vru1666.github.io/ganesh-invitation/';
   window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank', 'noopener');
 }
-
   /* --- Boot ----------------------------------------------- */
   function start() {
     if (el.petals) el.petals.hidden = !CONFIG.showPetals;
