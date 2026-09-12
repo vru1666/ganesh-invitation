@@ -67,7 +67,7 @@ p, h1, h2 { margin: 0; }
   height: 100vh;
   height: 100svh;
   overflow: hidden;
-  background: transparent;
+  background: url("assets/background.png") center center / cover no-repeat;
 }
 .hero__video {
   position: absolute;
